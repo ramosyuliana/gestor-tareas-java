@@ -1,0 +1,23 @@
+# Archivos compilados de Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+# IDEs
+.idea/
+*.iml
+.vscode/
+.eclipse/
+.project
+.classpath
+.settings/
+# Directorios de compilación
+bin/
+out/
+build/
+# Archivos del sistema
+.DS_Store
+Thumbs.db
