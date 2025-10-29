@@ -43,27 +43,27 @@ public class GestorTareas {
     /**
      * Muestra todas las tareas en pantalla.
      */
+    /**
+     * Muestra todas las tareas en pantalla.
+     */
     public void listarTareas() {
+// Verificar si hay tareas
         if (tareas.isEmpty()) {
             System.out.println("\n📭 No hay tareas registradas");
             return;
         }
-
+// Mostrar encabezado
         System.out.println("\n📋 LISTA DE TAREAS");
-        System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-
+        System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                ━━━━━━━━━━━━━━━━━━━━");
+// Recorrer y mostrar cada tarea con su índice
         for (int i = 0; i < tareas.size(); i++) {
             System.out.println("[" + i + "] " + tareas.get(i).toString());
         }
-
-        int completadas = 0;
-        for (Tarea t : tareas) {
-            if (t.isCompletada()) completadas++;
-        }
-
-        System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        System.out.println("Total: " + tareas.size() + " | Completadas: " + completadas +
-                " | Pendientes: " + (tareas.size() - completadas));
+// Mostrar pie
+        System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                ━━━━━━━━━━━━━━━━━━━━");
+                System.out.println("Total: " + tareas.size() + " tarea(s)");
     }
 
     // ============================================
